@@ -3,14 +3,13 @@ import { AllRoutes } from '@/routes';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-export interface IAppRouterProps {
-}
 
-export function AppRouter (props: IAppRouterProps) {
+
+export function AppRouter () {
   return (
     <Routes>
         {AllRoutes.map(route => 
-            <Route path={route.path} element={<route.component/>}/>    
+            <Route path={route.path} element={<route.component/>} key={route.path}/>    
         )}
     </Routes>
   );
