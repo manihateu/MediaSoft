@@ -11,6 +11,7 @@ type AppLayoutProps = {
 const AppLayout = ({children} : AppLayoutProps) => {
   return (
     <>
+    
         <NavBar/>
         <main className=''>
             <BrowserRouter>
