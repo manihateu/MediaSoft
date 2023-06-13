@@ -1,11 +1,11 @@
 import AppLayout from '@/components/AppLayout'
-import Image from 'next/image'
+import { AppRouter } from '@/components/AppRouter'
 import React, { Component } from 'react'
 
 export default function Home () {
   return (
-    <AppLayout>
-      <></>
-    </AppLayout>
+      <AppLayout>
+        <AppRouter/>
+      </AppLayout>
   )
 }

@@ -1,3 +1,4 @@
+import { MainBoard } from "@/pages/MainBoard";
 import React from "react";
 
 export interface IRoute {
@@ -8,3 +9,8 @@ export interface IRoute {
 export enum RouteNames {
     HOME = '/',
 }
+
+export const AllRoutes:IRoute[] = [
+    {path: RouteNames.HOME, component: MainBoard}
+]
+

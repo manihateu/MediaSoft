@@ -1,5 +1,7 @@
+'use client'
 import React, {ReactNode} from 'react';
 import NavBar from './NavBar';
+import { BrowserRouter } from 'react-router-dom'
 
 
 type AppLayoutProps = {
@@ -11,7 +13,9 @@ const AppLayout = ({children} : AppLayoutProps) => {
     <>
         <NavBar/>
         <main className=''>
-            {children}
+            <BrowserRouter>
+                {children}
+            </BrowserRouter>
         </main>
     </>
   );
