@@ -6,4 +6,4 @@ const PET_NAMES = {
     hamster: "home_hamster"
     };
 // Тип возможных ЗНАЧЕНИЙ словаря
-type TPetName = "home_cat" | "home_dog" | "home_parrot" | "home_rabbit" | "home_hamster";
+type TPetName = keyof typeof PET_NAMES;
