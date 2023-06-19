@@ -4,6 +4,7 @@ const PET_NAMES = {
     popug: "home_parrot",
     rabbit: "home_abbit",
     hamster: "home_hamster"
-    };
+} as const
 // Тип возможных ЗНАЧЕНИЙ словаря
-type TPetName = typeof PET_NAMES[keyof typeof PET_NAMES];
+type kyes = keyof typeof PET_NAMES;
+type TPetName = typeof PET_NAMES[kyes];
